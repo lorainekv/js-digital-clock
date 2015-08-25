@@ -4,10 +4,12 @@ function displayTimes() {
   // document represents the html page that we're working in.
   var localClock = document.getElementById("local-clock");
   var hawaiiClock = document.getElementById("hawaii-clock");
+  // var options = ;
+
   // You don't need to return a value, since this sets the display text
   // within the function
   localClock.innerText = adventureTime.toLocaleTimeString();
-  hawaiiClock.innerText = "hawaii time"
+  hawaiiClock.innerText = adventureTime.toLocaleTimeString('en-US', { timeZone: 'Pacific/Honolulu'});
 }
 
 // This updates the time each second
