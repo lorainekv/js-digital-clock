@@ -8,8 +8,8 @@ function displayTimes() {
 
   // You don't need to return a value, since this sets the display text
   // within the function
-  localClock.innerText = adventureTime.toLocaleTimeString();
-  hawaiiClock.innerText = adventureTime.toLocaleTimeString('en-US', { timeZone: 'Pacific/Honolulu'});
+  localClock.innerText = "Local: " + adventureTime.toLocaleTimeString();
+  hawaiiClock.innerText = "Hawaii: " + adventureTime.toLocaleTimeString('en-US', { timeZone: 'Pacific/Honolulu'});
 }
 
 // This updates the time each second
