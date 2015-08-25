@@ -7,7 +7,7 @@ function displayTime() {
   var clock = document.getElementById("clock");
   // You don't need to return a value, since this sets the display text
   // within the function
-  clock.innerText = currentTime.getSeconds();
+  clock.innerText = currentTime.toLocaleTimeString();
 }
 
 displayTime();
