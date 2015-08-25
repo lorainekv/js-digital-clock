@@ -1,4 +1,5 @@
 // Your code here
+
 function displayTime() {
   var currentTime = new Date();
   // console.log(currentTime);
@@ -7,7 +8,12 @@ function displayTime() {
   var clock = document.getElementById("clock");
   // You don't need to return a value, since this sets the display text
   // within the function
-  clock.innerText = currentTime.toLocaleTimeString();
+ clock.innerText = currentTime.toLocaleTimeString();
+
 }
 
-displayTime();
+function updateTime(){
+  setInterval(displayTime, 1000);
+}
+
+updateTime();
