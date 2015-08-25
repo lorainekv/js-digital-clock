@@ -12,9 +12,14 @@ function displayTimes() {
   hawaiiClock.innerText = "Hawaii: " + adventureTime.toLocaleTimeString('en-US', { timeZone: 'Pacific/Honolulu'});
 }
 
+
+// function displayTimes(div_id, local_time, )
+
 // This updates the time each second
 function updateTime(){
   setInterval(displayTimes, 1000);
 }
 
 updateTime();
+
+// This should be an Island Time clock
